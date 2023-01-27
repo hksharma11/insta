@@ -1,0 +1,94 @@
+
+
+<div class="container mt-5" style="width: 400px;" #post>
+  <div class="row mb-1">
+    <div class="col bg-danger">
+      <h4 class="ms-4">Amazon is Hiring</h4>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary ">
+      <h6>Position:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary">
+      <h6>Salary:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary">
+      <h6>Degree:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary">
+      <h6>Branch:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary">
+      <h6>Passout:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <div class="row mb-1">
+    <div class="col-3 bg-primary">
+      <h6>Location:</h6>
+    </div>
+    <div class="col-9 bg-secondary">
+      <h6>Sofware Engineer</h6>
+    </div>
+  </div>
+
+  <button (click)="create()">Create</button>
+</div>
+
+
+
+
+
+
+
+
+<div class="container mt-4">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        
+        <th scope="col">Jobs</th>
+        <th scope="col">Link</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let job of jobs let index = index;trackBy:trackByIndex;">
+        
+        <td>{{job.name+ " off campus drive"}}</td>
+        <td><button (click)="openLink(index)" type="button" class="btn btn-info">Apply</button></td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+</div>

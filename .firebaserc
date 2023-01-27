@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-firestore-1a79f": {
+      "hosting": {
+        "firestore": [
+          "angular-firestore-1a79f"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-firestore-1a79f"
+  }
+}
